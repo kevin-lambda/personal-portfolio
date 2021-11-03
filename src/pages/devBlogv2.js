@@ -281,6 +281,13 @@ const devBlogv2 = () => {
       </p>
       <p>committed changes.</p>
 
+      <h1>Day 2: more organized 3NOV2021</h1>
+      <p>
+        destructured and rendered basic array data. working on more advanced
+        data, images, links, slugs
+      </p>
+
+      {/* /////////////////////////////////////////////////////////////////////// */}
       <h1>ACTIONS LIST</h1>
       <h4>fresh start</h4>
       <li>navigate to a folder to contain website files</li>
@@ -312,7 +319,77 @@ const devBlogv2 = () => {
       </li>
       <li>gatsby-source-filesystem</li>
 
-      <li>****** fill in stuff from doing the graphql stuff..........</li>
+      <h4>
+        make a component to receive the full list of posts from gql.
+        AllPostsList
+      </h4>
+      <li>
+        Make a capitalized component. and make a graphql query searching for all
+        content of a type. we want to make a list of everything. Like a table of
+        contents
+      </li>
+      <li>
+        "make a variable to represent that gql query. in the syntax of: const
+        gqlvariable = graphql `{"{"}GQL_QUERY_HERE{"}"}`
+      </li>
+      <li>
+        "make another var that uses the function useStaticQuery and pass in the
+        gqlvariable. (to read the gql query). var = useStaticQuery(gqlvar)"
+      </li>
+      <li>
+        make another var to destructure the query array into the node parts we
+        want. such as title, id, image, date
+      </li>
+      <li>
+        make another component such as PostsLists to further breakdown(parse)
+        certain content in the data. we'll just keep this component as the
+        graphql grabber that gets the main list of things.
+      </li>
+      <li>
+        {" "}
+        in the return, call the new component and SEND it a new variable that
+        contains the OBJECT that is the destructured data.{" "}
+        {"<PostsList VAR={DESTRUCTURED_DATA}"} called sendPosts
+      </li>
+      <li>import the Postslist component</li>
+
+      <h4>
+        making component to pull out data from the gql array. MAP. PostsList
+      </h4>
+      <li>
+        we just passed in the COMPONENT PostLists, the OBJECT VARIABLE ARRAY
+        sendPosts, in the new component, tell it where sendPosts should go .
+        syntax like this. {"const PostsList = ({ sendPosts = [] }) => { "}
+        {
+          "const BREAKDOWN_COMP_NAME = ({ DESTRUCTURED_DATA_VAR = [INIT_AS_ARRAY] }) => { "
+        }
+      </li>
+      <li>
+        in the return, use the map function on the object variable array from
+        graphql. map function will go to each item in an array and do a thing to
+        each item. map function should have its own nested return.
+      </li>
+      <li>
+        {
+          "{VAR_ARRAY_BEING_WORKED.map((NEW_NAMED_MAPPED_VAR) => { stuff to do to each array item called NEW_NAMED_MAPPED_VAR })}"
+        }
+      </li>
+      <li>
+        specify what data OBJECTS to get from gql exactly.{" "}
+        {"const {id,title} = allNodes"}
+      </li>
+      <li>
+        test returning those objects. so, map will look at each item in array,
+        destructure, then return those items.
+      </li>
+      <li>
+        NOTE: the PostsList component doesnt render things by itself, it only
+        works if passed into AllPostsLists. and then we render AllPostsLists. I
+        think because that is where the gql data is.
+      </li>
+
+      <h4>working with more advanced gql data. images, links, slugs</h4>
+      <li>a</li>
     </main>
   )
 }
