@@ -275,6 +275,11 @@ const devBlogv2 = () => {
         today I learned about the importance of having version control and
         backups stable builds saved.
       </p>
+      <p>
+        redid connecting to contentful and pulling in allpost content. working
+        on getting the destructured array data
+      </p>
+      <p>committed changes.</p>
 
       <h1>ACTIONS LIST</h1>
       <h4>fresh start</h4>
@@ -306,6 +311,8 @@ const devBlogv2 = () => {
         gatsby-source-filesystem gatsby-transformer-sharp
       </li>
       <li>gatsby-source-filesystem</li>
+
+      <li>****** fill in stuff from doing the graphql stuff..........</li>
     </main>
   )
 }
