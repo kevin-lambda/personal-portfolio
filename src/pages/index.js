@@ -1,4 +1,5 @@
 import * as React from "react"
+// test change 1
 
 // styles
 const pageStyles = {
@@ -154,7 +155,7 @@ const IndexPage = () => {
             {docLink.text}
           </a>
         </li>
-        {links.map(link => (
+        {links.map((link) => (
           <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
             <span>
               <a
