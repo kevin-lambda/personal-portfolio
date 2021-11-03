@@ -390,6 +390,21 @@ const devBlogv2 = () => {
 
       <h4>working with more advanced gql data. images, links, slugs</h4>
       <li>a</li>
+
+      <h4>updating contentful</h4>
+      <li>need to restart server to see changes</li>
+
+      {/* /////////////////////////////////////////////////////////////////////// */}
+      <h1>fixes and errors</h1>
+      <p>SITUATION: usually when updating gatsby or cli stuff</p>
+      <p>
+        ERROR: cannot be loaded because running scripts is disabled on this
+        system. For more information, see about_Execution_Policies at.
+      </p>
+      <p>
+        FIX: delete a file. ..localdisk/users/.../appdata/roaming/npm/gatsby.ps1
+        . the powershell script file
+      </p>
     </main>
   )
 }
