@@ -286,7 +286,33 @@ const devBlogv2 = () => {
         destructured and rendered basic array data. working on more advanced
         data, images, links, slugs
       </p>
+      <p>pulling main text is okay.</p>
+      <p>
+        ISSUE: tested using main text with formatting like heading, bold,
+        italics, link. these dont work.
+      </p>
+      <p>trying npm install gatsby-transformer-remark plugin</p>
 
+      <p>
+        ????????? keep trying to figure out the markdown thing or just use basic
+        text? try for a few hours and if it does not work then go with basic
+        text
+      </p>
+      <p>
+        nah just go with the basic implementation. and DO NOT USE special
+        markings or embedded in contentful
+      </p>
+      <p>
+        okay, got in working from the ALL list, image, text, title, date, basic
+        infomation
+      </p>
+      <p>NEXT, programmatically make pages for each article.</p>
+      <p>********************* /MAKE A NEW BRANCH HERE!!!!!!!!!!*****</p>
+
+      {/* /////////////////////////////////////////////////////////////////////// */}
+      {/* /////////////////////////////////////////////////////////////////////// */}
+      {/* /////////////////////////////////////////////////////////////////////// */}
+      {/* /////////////////////////////////////////////////////////////////////// */}
       {/* /////////////////////////////////////////////////////////////////////// */}
       <h1>ACTIONS LIST</h1>
       <h4>fresh start</h4>
@@ -389,7 +415,15 @@ const devBlogv2 = () => {
       </li>
 
       <h4>working with more advanced gql data. images, links, slugs</h4>
-      <li>a</li>
+      <li>drill down to the node, which we send to the list</li>
+      <li>
+        for the main list, can use {"{item1, item2, item3} = allNodes_VAR"} type
+        of destructuring
+      </li>
+      <li>
+        for other items that have more nested structure, can use the the other
+        way. {"postText = allNodes.mainTextParent.mainTextchild"}
+      </li>
 
       <h4>updating contentful</h4>
       <li>need to restart server to see changes</li>

@@ -10,16 +10,23 @@ const PostsList = ({ sendPosts = [] }) => {
       <div>this is the posts list component showing up</div>
       <div>
         {sendPosts.map((allNodes) => {
-          const { id, title, postDate } = allNodes
+          const { id, title, postDate, featuredImage } = allNodes
+          const postText = allNodes.mainText.mainText
+          const pathToImage = getImage(featuredImage)
           return (
-            <p>
-              <p>{id}</p>
-              <p>{title}</p>
-              <p>{postDate}</p>
-            </p>
+            <div>
+              <p>ID: {id}</p>
+              <p>TITLE: {title}</p>
+              <p>POST_DATE: {postDate}</p>
+              <p>POST_TEXT: {postText}</p>
+              <p>
+                FEATURED_IMAGE: <GatsbyImage image={pathToImage} alt="thing" />
+              </p>
+            </div>
           )
         })}
       </div>
+      <div></div>
     </main>
   )
 }

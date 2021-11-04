@@ -12,9 +12,10 @@ const AllPostsList = () => {
     <main>
       <div>this is the all post lists component showing up</div>
       <PostsList sendPosts={post} />
+
       {/* this calls the PostsList component, but also sends it information */}
       {/* for the PostsList component, which we imported, send a variable called sendPosts, that is the object {post}, which is the destructed information from the variable postData, which parsed the graphql query */}
-      {/* now go work on the PostLists component to use this object */}
+      {/* now go work on the PostLists component to use this object a */}
     </main>
   )
 }
@@ -25,12 +26,20 @@ const AllPostsList = () => {
 // queryVariable is just a variable representing the graphql
 const queryVariable = graphql`
   {
-    allContentfulTestPostType1(sort: { order: DESC, fields: postDate }) {
-      totalCount
+    allContentfulTestPostType1(sort: { fields: postDate, order: DESC }) {
       nodes {
-        title
         id
+        title
         postDate
+        mainText {
+          mainText
+        }
+        featuredImage {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+        }
+        additionalImages {
+          gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+        }
       }
     }
   }
