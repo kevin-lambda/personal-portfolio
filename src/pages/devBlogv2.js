@@ -2,6 +2,8 @@ import React from "react"
 const devBlogv2 = () => {
   return (
     <main>
+      <h2>This is the BASELINE_ATTEMPT BRANCH???</h2>
+
       <h1>Day 1 21oct2021</h1>
       <div>
         - tried to choose a starter - went with the basic hello world,
