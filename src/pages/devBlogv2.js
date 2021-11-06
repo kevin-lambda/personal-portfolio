@@ -307,8 +307,51 @@ const devBlogv2 = () => {
         infomation
       </p>
       <p>NEXT, programmatically make pages for each article.</p>
-      <p>********************* /MAKE A NEW BRANCH HERE!!!!!!!!!!*****</p>
+      <p>********************* *****</p>
 
+      <h1>Day 3: back to the main challenge 4NOV2021</h1>
+      <p>
+        now figuring how to create pages programmatically. deciding if want to
+        do the method that cause errors last time. or another way. most
+        tutorials use a different method
+      </p>
+      <p>
+        the method that creates pages programmatically using curlies in the file
+        is called. File System Route API. if you give a content thing from gql,
+        gatsby knows to "infer" or drill down what item property you give it.
+        such as. gqlContent.item1
+      </p>
+      <p>this is the one that got errors after deleting... trying it now...</p>
+      <p>
+        deleting was fine. to be careful, DO NOT DELETE PAGES UNTIL SERVER IS
+        STOPPED.
+      </p>
+      <p>got data to post in a list. now try to get single data per page</p>
+
+      <h1>Day 4: last part 5NOV2021</h1>
+      <p>get single post per single page.</p>
+      <p>
+        go to gql but for single post, need to use arguments or dynamic var to
+        choose
+      </p>
+      <p>
+        got title, text, single image to work. for each page. trying to figure
+        out multiple images per page
+      </p>
+
+      <p>
+        dude. solved something complex on my own for the first time. that wasnt
+        already in video tutorial form. finally. figured out how to map an array
+        in an array. (nested array)
+      </p>
+      <p>##########################################</p>
+      <p>
+        I think it is ready. Solved the problems regarding the content. now have
+        a good template in this branch of what to do.
+      </p>
+      <p>now to do the actual content in another branch.</p>
+
+      <div></div>
       {/* /////////////////////////////////////////////////////////////////////// */}
       {/* /////////////////////////////////////////////////////////////////////// */}
       {/* /////////////////////////////////////////////////////////////////////// */}
@@ -344,6 +387,7 @@ const devBlogv2 = () => {
         gatsby-source-filesystem gatsby-transformer-sharp
       </li>
       <li>gatsby-source-filesystem</li>
+      <li>npm i slugify</li>
 
       <h4>
         make a component to receive the full list of posts from gql.
@@ -427,6 +471,159 @@ const devBlogv2 = () => {
 
       <h4>updating contentful</h4>
       <li>need to restart server to see changes</li>
+
+      <h4>methods to destructure</h4>
+      <li>thing1: {"{ thing 1}"} = data.content</li>
+
+      <h4>***programmatically create pages***USING FILE SYSTEM ROUTE API</h4>
+      <p>
+        make a file with curlies.{" "}
+        {"{SINGLE_CONTENT_PARENT_FROM_GQL.ITEM_WITH_NAME_WANTED"}
+      </p>
+      <li>new rule. DO NOT DELETE PAGES UNLESS SERVER IS STOPPED.</li>
+      <li>
+        **** when making programmatic pages, gatsby will auto pull in certain
+        data. it will be stored in the object props. which we can console log
+        and then destructure to get data from. This can be useful. esp for using
+        as dynamic variable in gql.
+      </li>
+
+      <h4>making links with gatsby Link</h4>
+      <li>
+        the link function takes an argument called "to" in form for a string
+        path. (it is in `` or "")
+      </li>
+
+      <h4>setting up URL, slugify</h4>
+      <li>if we want to make some string a slug</li>
+      <li>import slugify from "slugify"</li>
+      <li>
+        use the function slugify, which takes a string variable, can also give
+        it arguments such as in {"{lower:true}"}
+      </li>
+      <li>
+        looks like this{" "}
+        {
+          "--->const NewVariableWhichIsASlug = slugify(VarToBeSlugged, {option: value})<---"
+        }
+      </li>
+      <div></div>
+
+      <h4>arrays and keys</h4>
+      <li>
+        sometimes? things in arrays that are mapped out need a key. a key is
+        thing that will associate with each array item. Like. Key = 1 ; Array
+        item 1. Key = 2 ; array item 2.
+      </li>
+      <li>
+        when un arraying something the key should be in the parent tag that
+        wraps ALL of the lower level children
+      </li>
+      <li>
+        (topLevelParent key = 123; (child1 stuff) (child2 stuff) (child3 stuff))
+      </li>
+      <li>
+        the lower level child do not need a key as long as the top level parent
+        has a key to uniquely identify it
+      </li>
+
+      <h4>what are template literals</h4>
+      <li>
+        tempalte literals are strings that allow substitutions. (aka a variable)
+      </li>
+      <li>probably literal strings dont usually allow substitutions</li>
+      <li>
+        template literals are "delimited" or identified back the backtick ``
+      </li>
+      <li>
+        ***** the placeholder is expressed by
+        {/* ----->${expression_or_variable}<----- */}
+      </li>
+      <li>
+        and used in an example like this{" "}
+        {/* "---->` string text ${expression_or_variable} string text`<-----" */}
+      </li>
+      <li>it is probably used in a folder path like this</li>
+      <li> changingFileName = dynamic data thing</li>
+      {/* <li>"------>`/folder1/folder2/${changingFileName}`<------"</li> */}
+
+      <h4>when to use object or variable</h4>
+      <li>
+        for certain functions or tags, it will just take in a variable, such as
+        slugify, will just take a variable. where in a html tag, it will print
+        the literal thing entered unless it is made into an object, then the
+        html tag will interpret that as a variable object
+      </li>
+
+      <h4>mapping a nested array</h4>
+      <p> </p>
+      <li>
+        the component additionalMapImages is passed the sendPosts array, which
+        is from gql that holds all the posts as NODES in the object array form
+      </li>
+      <li>
+        then the sendPosts is mapped out and named allNodes, which does a thing
+        (expression) to each item in the allNodes. it does a thing to each node
+      </li>
+      <li>We now have access to the items (children) below allNodes</li>
+      <li>
+        we can now map again if there is a nested array. HOWEVER we still need
+        to say what the parent is. in this case
+      </li>
+      <li>parent = allNodes, child = additionalImages</li>
+      <li>do allNodes.additionalImages.map and was named allAddImages</li>
+      {/* const AdditionalMapImages = ({ sendPosts = [] }) => {
+  console.log({ sendPosts })
+  return (
+    <main>
+      <div>
+        <p>we are trying to map out additional images</p>
+      </div>
+      <div>
+        {sendPosts.map((allNodes) => {
+          const { id, title } = allNodes
+          return (
+            <div key={id}>
+              <p>this is the top level array of all nodes</p>
+              <p>{title}</p>
+
+              {allNodes.additionalImages.map((allAddImages) => {
+                const { gatsbyImageData, id } = allAddImages
+                return (
+                  <div key={id}>
+                    <p>this should be the objects in additional images</p>
+                    <GatsbyImage image={gatsbyImageData} alt="LETS GOOOO" />
+                  </div>
+                )
+              })}
+            </div>
+          )
+        })}
+      </div>
+    </main>
+  )
+} */}
+
+      <h4>get single dynamic gql content</h4>
+      <li>
+        use single gql, but use arguments "filter eq variable or dynamic var"
+      </li>
+      <li>
+        now to get dynamic, pass in gql query, a variable, we need to init it.
+      </li>
+      <li>($title:String) variable and type. variable can be anything?</li>
+      <li>then use it as the input to the argument</li>
+      <li>
+        test it using a query variable. (which simulates passing in a variable
+        with a value)
+      </li>
+      <li>then in dynamic page component, put in the gql query</li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
 
       {/* /////////////////////////////////////////////////////////////////////// */}
       <h1>fixes and errors</h1>
