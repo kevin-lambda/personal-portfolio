@@ -529,7 +529,7 @@ const zdevBlogv2 = () => {
         has a key to uniquely identify it
       </li>
 
-      <h4>what are template literals</h4>
+      <h4>what are template literals, for slugs</h4>
       <li>
         tempalte literals are strings that allow substitutions. (aka a variable)
       </li>
