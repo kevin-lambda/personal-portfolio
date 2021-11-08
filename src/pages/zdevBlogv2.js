@@ -1,5 +1,5 @@
 import React from "react"
-const devBlogv2 = () => {
+const zdevBlogv2 = () => {
   return (
     <main>
       <h2>This is the BASELINE_ATTEMPT BRANCH</h2>
@@ -642,4 +642,4 @@ const devBlogv2 = () => {
   )
 }
 
-export default devBlogv2
+export default zdevBlogv2
