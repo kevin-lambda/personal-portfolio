@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Layout from "../components/Layout"
 
 const PostTemplate = ({ data }) => {
   // destructure the gql
@@ -20,36 +21,41 @@ const PostTemplate = ({ data }) => {
   const pathToAddImage = data.contentfulPortfolioPost.additionalImages
   return (
     <main>
-      <div>
-        <p>TITLE: {title}</p>
-        <p>POSTDATE: {postDate} </p>
-        <p>MAIN CATEGORY: {mainCategory} </p>
-        <p>SUB CATEGORY: {subCategory} </p>
-        <p>TAGS: {tags} </p>
-        <p>MAIN PAGE FEATURED: {mainPageFeatured} </p>
-        <p>ID: {id} </p>
-        <p>BODY TEXT: {bodyText}</p>
-        <p>
-          FEATURED IMAGE:
-          <GatsbyImage image={pathToFeatImage} alt="featured image" />
-        </p>
-
-        {/* map the additional images */}
+      <Layout>
         <div>
-          {pathToAddImage.map((AllAddImages) => {
-            const { gatsbyImageData, id } = AllAddImages
-            return (
-              <div key={id}>
-                <GatsbyImage image={gatsbyImageData} alt="additional images" />
-              </div>
-            )
-          })}
-        </div>
+          <p>TITLE: {title}</p>
+          <p>POSTDATE: {postDate} </p>
+          <p>MAIN CATEGORY: {mainCategory} </p>
+          <p>SUB CATEGORY: {subCategory} </p>
+          <p>TAGS: {tags} </p>
+          <p>MAIN PAGE FEATURED: {mainPageFeatured} </p>
+          <p>ID: {id} </p>
+          <p>BODY TEXT: {bodyText}</p>
+          <p>
+            FEATURED IMAGE:
+            <GatsbyImage image={pathToFeatImage} alt="featured image" />
+          </p>
 
-        <p></p>
-        <p></p>
-        <p></p>
-      </div>
+          {/* map the additional images */}
+          <div>
+            {pathToAddImage.map((AllAddImages) => {
+              const { gatsbyImageData, id } = AllAddImages
+              return (
+                <div key={id}>
+                  <GatsbyImage
+                    image={gatsbyImageData}
+                    alt="additional images"
+                  />
+                </div>
+              )
+            })}
+          </div>
+
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </Layout>
     </main>
   )
 }

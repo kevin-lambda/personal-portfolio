@@ -1,0 +1,35 @@
+/*
+[1] global variables
+[2] global styles
+[3] ...
+*/
+
+/* //////////////////////////////////////////////////// */
+/* ///////////////// GLOBAL VARIABLES \\\\\\\\\\\\\\\\\ */
+/* //////////////////////////////////////////////////// */
+:root {
+  --gFont: Helvetica, Arial, sans-serif;
+  --gFontWeight: bold;
+  --gBgColor: rgb(29, 29, 29);
+  --gTextColor: rgb(189, 189, 189);
+
+  --gMargin: 0px;
+  --gPadding: 40px;
+}
+
+/* //////////////////////////////////////////////////// */
+/* ///////////////// GLOBAL STYLES \\\\\\\\\\\\\\\\\\\\ */
+/* //////////////////////////////////////////////////// */
+.default-page {
+  background-color: var(--gBgColor);
+  color: var(--gTextColor);
+  font-family: var(--gFont);
+  font-weight: var(--gFontWeight);
+
+  margin: var(--gMargin);
+  padding: var(--gPadding);
+}
+
+/* //////////////////////////////////////////////////// */
+/* ///////////////// a \\\\\\\\\\\\\\\\\ */
+/* //////////////////////////////////////////////////// */
