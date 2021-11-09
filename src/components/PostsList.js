@@ -45,6 +45,7 @@ const PostsList = ({ sendPosts = [] }) => {
 export default PostsList
 
 /* 
+FOR DEBUGGING. place in the return
   <p>ID: {id}</p>
   <p>TITLE: {title}</p>
   <p>POST_DATE: {postDate}</p>
