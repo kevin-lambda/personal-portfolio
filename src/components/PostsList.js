@@ -6,7 +6,7 @@ import slugify from "slugify"
 const PostsList = ({ sendPosts = [] }) => {
   return (
     <main>
-      <div>
+      <div className="all-posts-container">
         {sendPosts.map((allNodes) => {
           const {
             id,
@@ -22,17 +22,19 @@ const PostsList = ({ sendPosts = [] }) => {
           const slugTitle = slugify(title, { lower: true })
           return (
             <main key={id}>
-              <Link to={`/${slugTitle}`} className="default-link">
-                {title}
-              </Link>
-              <Link to={`/${slugTitle}`}>
-                <GatsbyImage
-                  image={pathToImage}
-                  alt="thing"
-                  layout="constrained"
-                  placeholder="blurred"
-                />{" "}
-              </Link>
+              <div className="all-posts-sub-container">
+                <Link to={`/${slugTitle}`}>
+                  <GatsbyImage
+                    image={pathToImage}
+                    alt="thing"
+                    layout="constrained"
+                    placeholder="blurred"
+                  />
+                </Link>
+                <Link to={`/${slugTitle}`} className="default-link">
+                  {title}
+                </Link>
+              </div>
             </main>
           )
         })}

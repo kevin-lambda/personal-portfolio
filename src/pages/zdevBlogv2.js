@@ -362,7 +362,23 @@ const zdevBlogv2 = () => {
       </li>
       <li>have all the links and data set up</li>
       <li>now just working on CSS stylings for everything</li>
+      <li>
+        figuring out how to do the css grid thing. its a little complicated
+      </li>
+      <li>**** need to consider how there are grids inside a grid</li>
+
       <li>close to v 1.0</li>
+
+      <h1>Day 6: last part 9NOV2021</h1>
+      <li>
+        all posts now showing on home page. need to CSS the main posts into
+        blocks. tried to use grid. looks like it should be flexbox.
+      </li>
+      <li>
+        after will CSS the individual pages. should be easier. BUT, paragraphs
+        not working correctly...
+      </li>
+      <li>then back to header and footer stuff</li>
 
       <div></div>
       {/* /////////////////////////////////////////////////////////////////////// */}
@@ -646,6 +662,15 @@ const zdevBlogv2 = () => {
       <li></li>
       <li></li>
       <li></li>
+      <li></li>
+      <li></li>
+
+      <h2>CSS grids/flexbox</h2>
+      <li>if want to format things inside a grid, need grid within a grid</li>
+      <li>I THINK IT IS FLEX</li>
+      <li>
+        ///need to use flex box, elsewise it doesnt render nicely on mobile
+      </li>
       <li></li>
       <li></li>
 
