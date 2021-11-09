@@ -21,7 +21,7 @@ const PostsList = ({ sendPosts = [] }) => {
           const pathToImage = getImage(featuredImage)
           const slugTitle = slugify(title, { lower: true })
           return (
-            <main key={id}>
+            <main key={id} className="all-posts-card-container">
               <div className="all-posts-sub-container">
                 <Link to={`/${slugTitle}`}>
                   <GatsbyImage
@@ -29,6 +29,7 @@ const PostsList = ({ sendPosts = [] }) => {
                     alt="thing"
                     layout="constrained"
                     placeholder="blurred"
+                    className="thumbnail-sizing"
                   />
                 </Link>
                 <Link to={`/${slugTitle}`} className="default-link">

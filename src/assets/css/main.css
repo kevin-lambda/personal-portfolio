@@ -9,7 +9,7 @@
 /* //////////////////////////////////////////////////// */
 :root {
   --gFont: Helvetica, Arial, sans-serif;
-  --gFontSize: 1.35vw;
+  /* --gFontSize: 1.35vw; */
   --gFontWeight: bold;
   --gBgColor: rgb(29, 29, 29);
   --gTextColor: rgb(189, 189, 189);
@@ -32,6 +32,7 @@
 
   margin: var(--gMargin);
   padding: var(--gPadding);
+  min-height: 100vh;
 }
 
 /* #################### LINKS ######################## */
@@ -54,38 +55,32 @@
 /* ////////////////////// Posts \\\\\\\\\\\\\\\\\\\\\\\ */
 /* //////////////////////////////////////////////////// */
 
-/*need to do grid within grids?*/
-/* first make a static grid for the featured image and title */
-/* /. then dynamic grid for the full list*/
-
 .all-posts-container {
-  /* ////need to use flex box, elsewise it doesnt render properly on mobile it seems...
-  
-  
   display: flex;
-  flex-wrap: wrap-reverse; */
-  display: grid;
-  grid-template-columns: 33% 33% auto;
-  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .all-posts-sub-container {
   display: grid;
   gap: 0.5rem;
+  margin: 0.7rem;
 }
 
+/*for mobile*/
+.all-posts-card-container {
+  flex: 100%;
+}
+
+/*for desktop*/
+@media screen and (min-width: 800px) {
+  .all-posts-card-container {
+    flex: 33.3%;
+  }
+}
+
+.thumbnail-sizing {
+  height: 17rem;
+  width: 100%;
+  object-fit: cover;
+}
 /*===================  TEMPORARY ===========================*/
-.container-color-helper {
-  background-color: teal;
-}
-
-.grid-test {
-  display: grid;
-  grid-template-columns: auto;
-}
-
-.grid-test2 {
-  display: grid;
-  grid-template-columns: 33% auto 33%;
-  gap: 2rem;
-}

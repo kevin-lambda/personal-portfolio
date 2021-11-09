@@ -668,9 +668,7 @@ const zdevBlogv2 = () => {
       <h2>CSS grids/flexbox</h2>
       <li>if want to format things inside a grid, need grid within a grid</li>
       <li>I THINK IT IS FLEX</li>
-      <li>
-        ///need to use flex box, elsewise it doesnt render nicely on mobile
-      </li>
+      <li>need to use flex box, elsewise it doesnt render nicely on mobile</li>
       <li></li>
       <li></li>
 
