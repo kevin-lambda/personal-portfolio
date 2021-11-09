@@ -18,7 +18,6 @@ const AllPostsList = () => {
 
   return (
     <main>
-      <div>this is the all post lists component showing up</div>
       <PostsList sendPosts={post} />
 
       {/* this calls the PostsList component, but also sends it information */}

@@ -12,6 +12,8 @@
   --gFontWeight: bold;
   --gBgColor: rgb(29, 29, 29);
   --gTextColor: rgb(189, 189, 189);
+  --gTextColorHover: orange;
+  --gColorTransition: 0.8s;
 
   --gMargin: 0px;
   --gPadding: 40px;
@@ -28,6 +30,21 @@
 
   margin: var(--gMargin);
   padding: var(--gPadding);
+}
+
+/* #################### LINKS ######################## */
+.default-link {
+  color: var(--gTextColor);
+  transition: color var(--gColorTransition);
+}
+
+.default-link:visited {
+  color: var(--gTextColor);
+}
+
+.default-link:hover {
+  color: var(--gTextColorHover);
+  transition: color var(--gColorTransition);
 }
 
 /* //////////////////////////////////////////////////// */

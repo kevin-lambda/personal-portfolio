@@ -6,7 +6,6 @@ import slugify from "slugify"
 const PostsList = ({ sendPosts = [] }) => {
   return (
     <main>
-      <div>this is the posts list component showing up</div>
       <div>
         {sendPosts.map((allNodes) => {
           const {
@@ -19,28 +18,21 @@ const PostsList = ({ sendPosts = [] }) => {
             tags,
             mainPageFeatured,
           } = allNodes
-          // const postText = allNodes.mainText.mainText
           const pathToImage = getImage(featuredImage)
           const slugTitle = slugify(title, { lower: true })
           return (
             <main key={id}>
-              <p>ID: {id}</p>
-              <p>TITLE: {title}</p>
-              <p>POST_DATE: {postDate}</p>
-              <p>MAIN CATEGORY: {mainCategory} </p>
-              <p>SUB CATEGORY: {subCategory} </p>
-              <p>TAGS: {tags} </p>
-              <p>MAIN PAGE FEATURED: {mainPageFeatured} </p>
-              {/* <p>
-                FEATURED_IMAGE: <GatsbyImage image={pathToImage} alt="thing" />
-              </p> */}
-              <Link to={`/${slugTitle}`}> LINK TO POST: {title} </Link>
-              <Link to={`/${slugTitle}`}>
-                <GatsbyImage image={pathToImage} alt="thing" />{" "}
+              <Link to={`/${slugTitle}`} className="default-link">
+                {title}
               </Link>
-              <p>
-                ===============================================================
-              </p>
+              <Link to={`/${slugTitle}`}>
+                <GatsbyImage
+                  image={pathToImage}
+                  alt="thing"
+                  layout="constrained"
+                  placeholder="blurred"
+                />{" "}
+              </Link>
             </main>
           )
         })}
@@ -51,3 +43,13 @@ const PostsList = ({ sendPosts = [] }) => {
 }
 
 export default PostsList
+
+/* 
+  <p>ID: {id}</p>
+  <p>TITLE: {title}</p>
+  <p>POST_DATE: {postDate}</p>
+  <p>MAIN CATEGORY: {mainCategory} </p>
+  <p>SUB CATEGORY: {subCategory} </p>
+  <p>TAGS: {tags} </p>
+  <p>MAIN PAGE FEATURED: {mainPageFeatured} </p>
+*/

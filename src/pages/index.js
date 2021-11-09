@@ -13,6 +13,7 @@ const index = () => {
       <Layout>
         <AllPostsList />
       </Layout>
+      <footer>FOOTER HERE?</footer>
     </main>
   )
 }
