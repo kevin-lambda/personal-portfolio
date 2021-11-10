@@ -2,6 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXProvider } from "@mdx-js/react"
 
 const PostTemplate = ({ data }) => {
   // destructure the gql
@@ -19,6 +21,7 @@ const PostTemplate = ({ data }) => {
   } = data.contentfulPortfolioPost
   const pathToFeatImage = getImage(featuredImage)
   const pathToAddImage = data.contentfulPortfolioPost.additionalImages
+  const pathToTextMarkdown = data.contentfulPortfolioPost.bodyText.childMdx.body
 
   return (
     <main>
@@ -35,8 +38,9 @@ const PostTemplate = ({ data }) => {
               className="post-feat-img"
             />
           </div>
-          <p>{bodyText}</p>
-
+          <MDXProvider>
+            <MDXRenderer>{pathToTextMarkdown}</MDXRenderer>
+          </MDXProvider>
           {/* map the additional images */}
           <div>
             {pathToAddImage.map((AllAddImages) => {
@@ -84,6 +88,10 @@ export const query = graphql`
       bodyText {
         bodyText
         id
+        childMdx {
+          body
+          id
+        }
       }
     }
   }

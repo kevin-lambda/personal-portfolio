@@ -38,7 +38,7 @@
 }
 
 /* #################### LINKS ######################## */
-.default-link {
+.default-link:link {
   color: var(--gTextColor);
   transition: color var(--gColorTransition);
   text-decoration: none;

@@ -497,6 +497,10 @@ const zdevBlogv2 = () => {
         <li>gatsby-source-filesystem</li>
         <li>npm i slugify</li>
         <li>npm install normalize.css</li>
+        <li>npm install gatsby-plugin-mdx @mdx-js/mdx @mdx-js/react</li>
+        <li>
+          https://rogulski.it/blog/gatsby-contentful-markdown-jsx-component/
+        </li>
         <h4>
           make a component to receive the full list of posts from gql.
           AllPostsList
