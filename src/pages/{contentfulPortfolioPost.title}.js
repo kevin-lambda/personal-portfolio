@@ -19,22 +19,22 @@ const PostTemplate = ({ data }) => {
   } = data.contentfulPortfolioPost
   const pathToFeatImage = getImage(featuredImage)
   const pathToAddImage = data.contentfulPortfolioPost.additionalImages
+
   return (
     <main>
       <Layout>
         <div>
-          <p>TITLE: {title}</p>
-          <p>POSTDATE: {postDate} </p>
-          <p>MAIN CATEGORY: {mainCategory} </p>
-          <p>SUB CATEGORY: {subCategory} </p>
-          <p>TAGS: {tags} </p>
-          <p>MAIN PAGE FEATURED: {mainPageFeatured} </p>
-          <p>ID: {id} </p>
-          <p>BODY TEXT: {bodyText}</p>
-          <p>
-            FEATURED IMAGE:
-            <GatsbyImage image={pathToFeatImage} alt="featured image" />
-          </p>
+          <h1>{title}</h1>
+          <p>{postDate}</p>
+          <div>
+            <GatsbyImage
+              image={pathToFeatImage}
+              alt="featured image"
+              loading="eager"
+              layout="constrained"
+            />
+          </div>
+          <p>{bodyText}</p>
 
           {/* map the additional images */}
           <div>

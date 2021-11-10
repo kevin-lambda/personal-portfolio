@@ -387,6 +387,7 @@ const zdevBlogv2 = () => {
           reasonable state.
         </li>
         <li>think about doing a navbar and a footer</li>
+        <li>continue to work on CSS for single page</li>
         <div></div>
         {/* /////////////////////////////////////////////////////////////////////// */}
         {/* /////////////////////////////////////////////////////////////////////// */}

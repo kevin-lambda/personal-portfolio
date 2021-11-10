@@ -1,7 +1,6 @@
 import React from "react"
 
 const testpage = () => {
-  return <div>hello world</div>
+  return <div>hello a</div>
 }
-
 export default testpage
