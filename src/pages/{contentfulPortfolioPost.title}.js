@@ -32,6 +32,7 @@ const PostTemplate = ({ data }) => {
               alt="featured image"
               loading="eager"
               layout="constrained"
+              className="post-feat-img"
             />
           </div>
           <p>{bodyText}</p>
@@ -41,10 +42,12 @@ const PostTemplate = ({ data }) => {
             {pathToAddImage.map((AllAddImages) => {
               const { gatsbyImageData, id } = AllAddImages
               return (
-                <div key={id}>
+                <div key={id} className="centering-css">
                   <GatsbyImage
                     image={gatsbyImageData}
                     alt="additional images"
+                    className="post-add-img"
+                    layout="constrained"
                   />
                 </div>
               )

@@ -11,6 +11,7 @@ const index = () => {
       <header>
         <HeroFormat />
       </header>
+      {/* navbar here? */}
       <Layout>
         <AllPostsList />
       </Layout>

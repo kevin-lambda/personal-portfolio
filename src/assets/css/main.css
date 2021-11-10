@@ -122,5 +122,27 @@
 }
 
 /* ################## SINGLE POSTS ######################### */
+.post-feat-img {
+  height: 30rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.post-add-img {
+  /* display: flex;
+  max-width: 75%; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  margin-bottom: 1rem; */
+  margin-bottom: 1rem;
+}
+
+.centering-css {
+  text-align: center;
+}
 
 /*===================  TEMPORARY ===========================*/
