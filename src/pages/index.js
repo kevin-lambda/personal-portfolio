@@ -3,17 +3,18 @@ import AllPostsList from "../components/AllPostsList"
 import "normalize.css"
 import "../assets/css/main.css"
 import Layout from "../components/Layout"
+import HeroFormat from "../components/HeroFormat"
 
 const index = () => {
   return (
     <main>
       <header>
-        <p>FRONT PAGE HERE/HERO</p>
+        <HeroFormat />
       </header>
       <Layout>
         <AllPostsList />
       </Layout>
-      <footer>FOOTER HERE?</footer>
+      {/* footer to go here?        <footer></footer> */}
     </main>
   )
 }

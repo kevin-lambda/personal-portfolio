@@ -1,34 +1,36 @@
 /*
 [1] global variables
 [2] global styles
-[3] ...
+[3] main page
 */
 
 /* //////////////////////////////////////////////////// */
-/* ///////////////// GLOBAL VARIABLES \\\\\\\\\\\\\\\\\ */
+/* ///////////// [1] GLOBAL VARIABLES \\\\\\\\\\\\\\\\\ */
 /* //////////////////////////////////////////////////// */
 :root {
   --gFont: Helvetica, Arial, sans-serif;
-  /* --gFontSize: 1.35vw; */
   --gFontWeight: bold;
   --gBgColor: rgb(29, 29, 29);
   --gTextColor: rgb(189, 189, 189);
   --gTextColorHover: orange;
   --gColorTransition: 0.8s;
+  --gHeroTextColor: rgb(221, 221, 221);
 
   --gMargin: 0rem;
   --gPadding: 2rem;
+
+  /* --gFontSize: 1.35vw; */
 }
 
 /* //////////////////////////////////////////////////// */
-/* ///////////////// GLOBAL STYLES \\\\\\\\\\\\\\\\\\\\ */
+/* ///////////// [2] GLOBAL STYLES \\\\\\\\\\\\\\\\\\\\ */
 /* //////////////////////////////////////////////////// */
 .default-page {
   background-color: var(--gBgColor);
   color: var(--gTextColor);
   font-family: var(--gFont);
   font-weight: var(--gFontWeight);
-  font-size: var(--gFontSize);
+  /* font-size: var(--gFontSize); */
 
   margin: var(--gMargin);
   padding: var(--gPadding);
@@ -52,9 +54,44 @@
 }
 
 /* //////////////////////////////////////////////////// */
-/* ////////////////////// Posts \\\\\\\\\\\\\\\\\\\\\\\ */
+/* //////////////// [3] MAIN PAGE \\\\\\\\\\\\\\\\\\\\\ */
 /* //////////////////////////////////////////////////// */
 
+/* ###################### HERO ######################## */
+.hero-image {
+  height: 100vh;
+  filter: grayscale(75%) blur(0.85px) brightness(40%);
+  transition: 3s;
+}
+
+.hero-image:hover {
+  filter: grayscale(20%) blur(0px) brightness(70%);
+  transition: 3s;
+}
+
+.hero-text-name {
+  position: absolute;
+  top: 10rem;
+  left: 3rem;
+  z-index: 2;
+  color: var(--gHeroTextColor);
+  font-family: var(--gFont);
+  font-weight: var(--gFontWeight);
+  /* background-color: rgb(0, 0, 0, 0.75); */
+}
+
+.hero-text-description {
+  position: absolute;
+  top: 17rem;
+  left: 3rem;
+  z-index: 2;
+  color: var(--gHeroTextColor);
+  font-family: var(--gFont);
+  font-weight: var(--gFontWeight);
+  /* background-color: rgb(0, 0, 0, 0.75); */
+}
+
+/* ###################### ALL POSTS ######################### */
 .all-posts-container {
   display: flex;
   flex-wrap: wrap;
@@ -83,4 +120,7 @@
   width: 100%;
   object-fit: cover;
 }
+
+/* ################## SINGLE POSTS ######################### */
+
 /*===================  TEMPORARY ===========================*/
