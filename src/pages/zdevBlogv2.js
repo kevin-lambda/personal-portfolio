@@ -19,7 +19,6 @@ const zdevBlogv2 = () => {
 
       <body>
         <h2>This is the BASELINE_ATTEMPT BRANCH</h2>
-
         <h2>Day 1 21oct2021</h2>
         <div>
           - tried to choose a starter - went with the basic hello world,
@@ -38,7 +37,6 @@ const zdevBlogv2 = () => {
           only learning the things I need to learn
         </div>
         <br></br>
-
         <h2> Day 2 22oct2021 </h2>
         <div>started with CSS trying to get splash image to be full height</div>
         <li>
@@ -73,10 +71,8 @@ const zdevBlogv2 = () => {
         </li>
         <li>get articles to show up on home page</li>
         <li>make a container layout component</li>
-
         <h2>Day 3 23oct2021</h2>
         <p>learning about fonts</p>
-
         <h2>Day 4 25oct2021</h2>
         <p>learning about margins and padding and border</p>
         <li>element has a container</li>
@@ -134,7 +130,6 @@ const zdevBlogv2 = () => {
           command or something?). figure this more out later...
           https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/
         </li>
-
         <h2>
           <span>Day 6 28oct2021</span>
         </h2>
@@ -168,7 +163,6 @@ const zdevBlogv2 = () => {
           successfully pulled a list of data from contentful. see (if it still
           exists) testpage.js
         </li>
-
         <h2>
           <span>Day 7 29oct2021</span>
         </h2>
@@ -256,28 +250,23 @@ const zdevBlogv2 = () => {
           then once the variable is working after running check. put the query
           into a component
         </li>
-
         <li>
           TODO: CONTINUE putting the graphql query into a component with the
           variables stuff. time = 7:22. because working on getting single
           article information but programmatically
         </li>
-
         <h2>
           <span>Day 8 2NOV2021</span>
         </h2>
-
         <p>
           duhhh, in GQL the query variables is just to test a variable in the
           graphql. when we take the gql query statement into our code, the
           variable in gql MUST match the variable we want to pass into from the
           code
         </p>
-
         <li>GQL: $title</li>
         <li>code: props.param.title</li>
         <li>the two match</li>
-
         <li>
           {" "}
           after doing this, we will now get specific data per contentful content
@@ -292,7 +281,6 @@ const zdevBlogv2 = () => {
           !!! ran into issue with rich text from contentful. figuring this
           out...
         </li>
-
         <h2>Day 1: RESTART. 2NOV2021</h2>
         <p>
           today I learned about the importance of having version control and
@@ -303,7 +291,6 @@ const zdevBlogv2 = () => {
           on getting the destructured array data
         </p>
         <p>committed changes.</p>
-
         <h2>Day 2: more organized 3NOV2021</h2>
         <p>
           destructured and rendered basic array data. working on more advanced
@@ -315,7 +302,6 @@ const zdevBlogv2 = () => {
           italics, link. these dont work.
         </p>
         <p>trying npm install gatsby-transformer-remark plugin</p>
-
         <p>
           ????????? keep trying to figure out the markdown thing or just use
           basic text? try for a few hours and if it does not work then go with
@@ -331,7 +317,6 @@ const zdevBlogv2 = () => {
         </p>
         <p>NEXT, programmatically make pages for each article.</p>
         <p>********************* *****</p>
-
         <h2>Day 3: back to the main challenge 4NOV2021</h2>
         <p>
           now figuring how to create pages programmatically. deciding if want to
@@ -352,7 +337,6 @@ const zdevBlogv2 = () => {
           STOPPED.
         </p>
         <p>got data to post in a list. now try to get single data per page</p>
-
         <h2>Day 4: last part 5NOV2021</h2>
         <p>get single post per single page.</p>
         <p>
@@ -363,7 +347,6 @@ const zdevBlogv2 = () => {
           got title, text, single image to work. for each page. trying to figure
           out multiple images per page
         </p>
-
         <p>
           dude. solved something complex on my own for the first time. that
           wasnt already in video tutorial form. finally. figured out how to map
@@ -375,7 +358,6 @@ const zdevBlogv2 = () => {
           have a good template in this branch of what to do.
         </p>
         <p>now to do the actual content in another branch.</p>
-
         <h2>Day 5: last part 8NOV2021</h2>
         <li>made content model</li>
         <li>made test posts</li>
@@ -389,9 +371,7 @@ const zdevBlogv2 = () => {
           figuring out how to do the css grid thing. its a little complicated
         </li>
         <li>**** need to consider how there are grids inside a grid</li>
-
         <li>close to v 1.0</li>
-
         <h2>Day 6: CSS main page 9NOV2021 a</h2>
         <li>
           all posts now showing on home page. need to CSS the main posts into
@@ -407,8 +387,67 @@ const zdevBlogv2 = () => {
           reasonable state.
         </li>
         <li>think about doing a navbar and a footer</li>
-
         <div></div>
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}{" "}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}{" "}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}{" "}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
+        {/* /////////////////////////////////////////////////////////////////////// */}
         {/* /////////////////////////////////////////////////////////////////////// */}
         {/* /////////////////////////////////////////////////////////////////////// */}
         {/* /////////////////////////////////////////////////////////////////////// */}
@@ -428,7 +467,6 @@ const zdevBlogv2 = () => {
         <h4>fresh start</h4>
         <li>navigate to a folder to contain website files</li>
         <li>run gatsby new</li>
-
         <h4>connecting contentful, already have API key</h4>
         <li>npm install gatsby-source-contentful</li>
         <li>modify gatsby-config per doc</li>
@@ -447,7 +485,6 @@ const zdevBlogv2 = () => {
           variable{" "}
         </li>
         <li>replace the accesstoken with the variable</li>
-
         <h4>more plugins</h4>
         <li>
           npm install gatsby-plugin-image gatsby-plugin-sharp
@@ -456,7 +493,6 @@ const zdevBlogv2 = () => {
         <li>gatsby-source-filesystem</li>
         <li>npm i slugify</li>
         <li>npm install normalize.css</li>
-
         <h4>
           make a component to receive the full list of posts from gql.
           AllPostsList
@@ -491,7 +527,6 @@ const zdevBlogv2 = () => {
           {"<PostsList VAR={DESTRUCTURED_DATA}"} called sendPosts
         </li>
         <li>import the Postslist component</li>
-
         <h4>
           making component to pull out data from the gql array. MAP. PostsList
         </h4>
@@ -526,7 +561,6 @@ const zdevBlogv2 = () => {
           works if passed into AllPostsLists. and then we render AllPostsLists.
           I think because that is where the gql data is.
         </li>
-
         <h4>working with more advanced gql data. images, links, slugs</h4>
         <li>drill down to the node, which we send to the list</li>
         <li>
@@ -537,13 +571,10 @@ const zdevBlogv2 = () => {
           for other items that have more nested structure, can use the the other
           way. {"postText = allNodes.mainTextParent.mainTextchild"}
         </li>
-
         <h4>updating contentful</h4>
         <li>need to restart server to see changes</li>
-
         <h4>methods to destructure</h4>
         <li>thing1: {"{ thing 1}"} = data.content</li>
-
         <h4>***programmatically create pages***USING FILE SYSTEM ROUTE API</h4>
         <p>
           make a file with curlies.{" "}
@@ -556,13 +587,11 @@ const zdevBlogv2 = () => {
           and then destructure to get data from. This can be useful. esp for
           using as dynamic variable in gql.
         </li>
-
         <h4>making links with gatsby Link</h4>
         <li>
           the link function takes an argument called "to" in form for a string
           path. (it is in `` or "")
         </li>
-
         <h4>setting up URL, slugify</h4>
         <li>if we want to make some string a slug</li>
         <li>import slugify from "slugify"</li>
@@ -577,7 +606,6 @@ const zdevBlogv2 = () => {
           }
         </li>
         <div></div>
-
         <h4>arrays and keys</h4>
         <li>
           sometimes? things in arrays that are mapped out need a key. a key is
@@ -596,7 +624,6 @@ const zdevBlogv2 = () => {
           the lower level child do not need a key as long as the top level
           parent has a key to uniquely identify it
         </li>
-
         <h4>what are template literals, for slugs</h4>
         <li>
           tempalte literals are strings that allow substitutions. (aka a
@@ -617,7 +644,6 @@ const zdevBlogv2 = () => {
         <li>it is probably used in a folder path like this</li>
         <li> changingFileName = dynamic data thing</li>
         {/* <li>"------>`/folder1/folder2/${changingFileName}`<------"</li> */}
-
         <h4>when to use object or variable</h4>
         <li>
           for certain functions or tags, it will just take in a variable, such
@@ -625,7 +651,6 @@ const zdevBlogv2 = () => {
           print the literal thing entered unless it is made into an object, then
           the html tag will interpret that as a variable object
         </li>
-
         <h4>mapping a nested array</h4>
         <p> </p>
         <li>
@@ -675,7 +700,6 @@ const zdevBlogv2 = () => {
     </main>
   )
 } */}
-
         <h4>get single dynamic gql content</h4>
         <li>
           use single gql, but use arguments "filter eq variable or dynamic var"
@@ -696,7 +720,6 @@ const zdevBlogv2 = () => {
         <li></li>
         <li></li>
         <li></li>
-
         <h2>CSS grids/flexbox</h2>
         <li>if want to format things inside a grid, need grid within a grid</li>
         <li>I THINK IT IS FLEX</li>
@@ -705,7 +728,6 @@ const zdevBlogv2 = () => {
         </li>
         <li></li>
         <li></li>
-
         {/* /////////////////////////////////////////////////////////////////////// */}
         <h2>fixes and errors</h2>
         <p>SITUATION: usually when updating gatsby or cli stuff</p>
