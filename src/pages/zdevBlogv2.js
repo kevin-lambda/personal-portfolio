@@ -388,7 +388,10 @@ const zdevBlogv2 = () => {
         </li>
         <li>think about doing a navbar and a footer</li>
         <li>continue to work on CSS for single page</li>
-        <div></div>
+        <div>
+          got CSS working pretty much for home and single post pages. going to
+          try and get markdown working again. it would make life a lot easier...
+        </div>
         {/* /////////////////////////////////////////////////////////////////////// */}
         {/* /////////////////////////////////////////////////////////////////////// */}
         {/* /////////////////////////////////////////////////////////////////////// */}
