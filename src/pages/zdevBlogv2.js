@@ -392,6 +392,7 @@ const zdevBlogv2 = () => {
           got CSS working pretty much for home and single post pages. going to
           try and get markdown working again. it would make life a lot easier...
         </div>
+        <p>okay. ready to ship v1.0.</p>
         {/* /////////////////////////////////////////////////////////////////////// */}
         {/* /////////////////////////////////////////////////////////////////////// */}
         {/* /////////////////////////////////////////////////////////////////////// */}
