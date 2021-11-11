@@ -1,0 +1,149 @@
+/*
+[1] global variables
+[2] global styles
+[3] main page
+*/
+
+/* //////////////////////////////////////////////////// */
+/* ///////////// [1] GLOBAL VARIABLES \\\\\\\\\\\\\\\\\ */
+/* //////////////////////////////////////////////////// */
+:root {
+  --gFont: Helvetica, Arial, sans-serif;
+  --gFontWeight: bold;
+  --gBgColor: rgb(29, 29, 29);
+  --gTextColor: rgb(189, 189, 189);
+  --gTextColorHover: orange;
+  --gColorTransition: 0.8s;
+  --gHeroTextColor: rgb(221, 221, 221);
+
+  --gMargin: 0rem;
+  --gPadding: 2rem;
+
+  /* --gFontSize: 1.35vw; */
+}
+
+/* //////////////////////////////////////////////////// */
+/* ///////////// [2] GLOBAL STYLES \\\\\\\\\\\\\\\\\\\\ */
+/* //////////////////////////////////////////////////// */
+.default-page {
+  background-color: var(--gBgColor);
+  color: var(--gTextColor);
+  font-family: var(--gFont);
+  font-weight: var(--gFontWeight);
+  /* font-size: var(--gFontSize); */
+
+  margin: var(--gMargin);
+  padding: var(--gPadding);
+  min-height: 100vh;
+}
+
+/* #################### LINKS ######################## */
+.default-link:link {
+  color: var(--gTextColor);
+  transition: color var(--gColorTransition);
+  text-decoration: none;
+}
+
+.default-link:visited {
+  color: var(--gTextColor);
+}
+
+.default-link:hover {
+  color: var(--gTextColorHover);
+  transition: color var(--gColorTransition);
+}
+
+/* //////////////////////////////////////////////////// */
+/* //////////////// [3] MAIN PAGE \\\\\\\\\\\\\\\\\\\\\ */
+/* //////////////////////////////////////////////////// */
+
+/* ###################### HERO ######################## */
+.hero-image {
+  height: 100vh;
+  filter: grayscale(75%) blur(0.85px) brightness(40%);
+  background-color: black;
+  transition: 3s;
+}
+
+.hero-image:hover {
+  filter: grayscale(20%) blur(0px) brightness(70%);
+  transition: 3s;
+}
+
+.hero-text-name {
+  position: absolute;
+  top: 10rem;
+  left: 3rem;
+  z-index: 2;
+  color: var(--gHeroTextColor);
+  font-family: var(--gFont);
+  font-weight: var(--gFontWeight);
+  /* background-color: rgb(0, 0, 0, 0.75); */
+}
+
+.hero-text-description {
+  position: absolute;
+  top: 17rem;
+  left: 3rem;
+  z-index: 2;
+  color: var(--gHeroTextColor);
+  font-family: var(--gFont);
+  font-weight: var(--gFontWeight);
+  /* background-color: rgb(0, 0, 0, 0.75); */
+}
+
+/* ###################### ALL POSTS ######################### */
+.all-posts-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all-posts-sub-container {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0.7rem;
+}
+
+/*for mobile*/
+.all-posts-card-container {
+  flex: 100%;
+}
+
+/*for desktop*/
+@media screen and (min-width: 800px) {
+  .all-posts-card-container {
+    flex: 33.3%;
+  }
+}
+
+.thumbnail-sizing {
+  height: 17rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ################## SINGLE POSTS ######################### */
+.post-feat-img {
+  height: 30rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.post-add-img {
+  /* display: flex;
+  max-width: 75%; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  margin-bottom: 1rem; */
+  margin-bottom: 1rem;
+}
+
+.centering-css {
+  text-align: center;
+}
+
+/*===================  TEMPORARY ===========================*/

@@ -1,28 +1,42 @@
 import React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import AllPostsList from "./AllPostsList"
 import slugify from "slugify"
 
 const PostsList = ({ sendPosts = [] }) => {
   return (
     <main>
-      <div>this is the posts list component showing up</div>
-      <div>
+      <div className="all-posts-container">
         {sendPosts.map((allNodes) => {
-          const { id, title, postDate, featuredImage } = allNodes
-          const postText = allNodes.mainText.mainText
+          const {
+            id,
+            title,
+            postDate,
+            featuredImage,
+            mainCategory,
+            subCategory,
+            tags,
+            mainPageFeatured,
+          } = allNodes
           const pathToImage = getImage(featuredImage)
+          const slugTitle = slugify(title, { lower: true })
           return (
-            <div>
-              <p>ID: {id}</p>
-              <p>TITLE: {title}</p>
-              <p>POST_DATE: {postDate}</p>
-              <p>POST_TEXT: {postText}</p>
-              <p>
-                FEATURED_IMAGE: <GatsbyImage image={pathToImage} alt="thing" />
-              </p>
-            </div>
+            <main key={id} className="all-posts-card-container">
+              <div className="all-posts-sub-container">
+                <Link to={`/${slugTitle}`}>
+                  <GatsbyImage
+                    image={pathToImage}
+                    alt="thing"
+                    layout="constrained"
+                    placeholder="blurred"
+                    className="thumbnail-sizing"
+                  />
+                </Link>
+                <Link to={`/${slugTitle}`} className="default-link">
+                  {title}
+                </Link>
+              </div>
+            </main>
           )
         })}
       </div>
@@ -32,3 +46,14 @@ const PostsList = ({ sendPosts = [] }) => {
 }
 
 export default PostsList
+
+/* 
+FOR DEBUGGING. place in the return
+  <p>ID: {id}</p>
+  <p>TITLE: {title}</p>
+  <p>POST_DATE: {postDate}</p>
+  <p>MAIN CATEGORY: {mainCategory} </p>
+  <p>SUB CATEGORY: {subCategory} </p>
+  <p>TAGS: {tags} </p>
+  <p>MAIN PAGE FEATURED: {mainPageFeatured} </p>
+*/
