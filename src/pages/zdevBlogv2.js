@@ -392,7 +392,7 @@ const zdevBlogv2 = () => {
           got CSS working pretty much for home and single post pages. going to
           try and get markdown working again. it would make life a lot easier...
         </div>
-        <p>okay. ready to ship v1.0.</p>
+        <p>okay. ready to ship v1.0..</p>
         <h3></h3>
         <p>1. CREATE GITHUB REPO</p>
         <p>2. PUSH PROJECT FROM TERMINAL TO GITHUB</p>
