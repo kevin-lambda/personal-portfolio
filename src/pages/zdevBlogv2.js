@@ -393,6 +393,12 @@ const zdevBlogv2 = () => {
           try and get markdown working again. it would make life a lot easier...
         </div>
         <p>okay. ready to ship v1.0.</p>
+        <h3></h3>
+        <p>1. CREATE GITHUB REPO</p>
+        <p>2. PUSH PROJECT FROM TERMINAL TO GITHUB</p>
+        <p>3. NETLIFY CREATE A SITE FROM GITHUB REPO</p>
+        <p>4. USE API KEY FOR NETLIFY</p>
+        <p>5. BUILD SITE</p>
         {/* /////////////////////////////////////////////////////////////////////// */}
         {/* /////////////////////////////////////////////////////////////////////// */}
         {/* /////////////////////////////////////////////////////////////////////// */}
