@@ -61,6 +61,7 @@
 .hero-image {
   height: 100vh;
   filter: grayscale(75%) blur(0.85px) brightness(40%);
+  background-color: black;
   transition: 3s;
 }
 
