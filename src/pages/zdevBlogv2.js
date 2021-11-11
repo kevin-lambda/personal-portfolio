@@ -18,7 +18,7 @@ const zdevBlogv2 = () => {
       </div>
 
       <body>
-        <h2>This is the BASE_MARKDOWN_ATTEMPT BRANCH</h2>
+        <h2>This is the MAIN BRANCH</h2>
         <h2>Day 1 21oct2021</h2>
         <div>
           - tried to choose a starter - went with the basic hello world,
