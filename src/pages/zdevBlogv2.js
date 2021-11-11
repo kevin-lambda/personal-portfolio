@@ -3,7 +3,7 @@ const zdevBlogv2 = () => {
   return (
     <main className="default-page">
       <div>
-        <h2>TO DO LIST:</h2>
+        <h2>TO DO LIST: </h2>
         <li>thing one</li>
         <li></li>
         <li></li>
