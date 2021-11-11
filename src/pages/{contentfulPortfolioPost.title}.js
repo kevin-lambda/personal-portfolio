@@ -6,8 +6,6 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import { MDXProvider } from "@mdx-js/react"
 
 const PostTemplate = ({ data }) => {
-  // destructure the gql
-
   const {
     title,
     postDate,
