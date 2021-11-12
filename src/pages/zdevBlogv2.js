@@ -3,7 +3,7 @@ const zdevBlogv2 = () => {
   return (
     <main className="default-page">
       <div>
-        <h2>TO DO LIST: </h2>
+        <h2>TO DO LIST : </h2>
         <li>
           to deploy, after pushing to github or updating contentful, mannually
           do clear cache and deploy in netlify.{" "}
