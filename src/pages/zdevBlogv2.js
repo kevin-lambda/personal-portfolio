@@ -4,7 +4,7 @@ const zdevBlogv2 = () => {
     <main className="default-page">
       <div>
         <h2>TO DO LIST: </h2>
-        <li>thing one a</li>
+        <li>thing one aa</li>
         <li></li>
         <li></li>
         <li></li>
