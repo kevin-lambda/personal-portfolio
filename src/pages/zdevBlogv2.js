@@ -4,7 +4,10 @@ const zdevBlogv2 = () => {
     <main className="default-page">
       <div>
         <h2>TO DO LIST: </h2>
-        <li>thing one aa</li>
+        <li>
+          to deploy, after pushing to github or updating contentful, mannually
+          do clear cache and deploy in netlify.{" "}
+        </li>
         <li></li>
         <li></li>
         <li></li>
