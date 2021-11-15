@@ -5,17 +5,27 @@ const zdevBlogv2 = () => {
       <div>
         <h2>TO DO LIST : </h2>
         <li>
-          to deploy, after pushing to github or updating contentful, mannually
-          do clear cache and deploy in netlify.{" "}
+          back burner. to deploy, after pushing to github or updating
+          contentful, mannually do clear cache and deploy in netlify. . Try to
+          check for a better solution.
         </li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+
+        <li>v 1.1 more basic features</li>
+        <li>
+          Make categories for posts, "1" projects: 1.1 technical/ 1.2creative.
+          "2" Blog: 2.1 life 2.2 hobbies{" "}
+        </li>
+        <li>make about page? make contact page?</li>
+        <li>
+          get long text field in contentful to render pictures and embeded
+          things better
+        </li>
+        <li>make a nav bar?</li>
+        <li>make a new type of page for photo entries</li>
+
+        <li>v 1.2 some fancy features</li>
+        <li>convert to featured items only on main page?</li>
+        <li>make swiveling item rotation thing for category lists</li>
         <li></li>
         <li></li>
       </div>
