@@ -3,6 +3,20 @@ const zdevBlogv2 = () => {
   return (
     <main className="default-page">
       <div>
+        <h3>Version 1.0</h3>
+        <p>Initial Release</p>
+
+        <h3>Version 1.1</h3>
+        <p>Implemented panelbear analytics</p>
+      </div>
+
+      <div>
+        <p>
+          ================================================================================
+        </p>
+      </div>
+
+      <div>
         <h2>TO DO LIST : </h2>
         <li>
           back burner. to deploy, after pushing to github or updating
