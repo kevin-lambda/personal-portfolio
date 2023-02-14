@@ -1,26 +1,22 @@
 import React from "react"
 
-const PANELBEAR_SITE_ID = "4x69OXpTsYW"
-
-const PANELBEAR_CONFIG = {
-  site: PANELBEAR_SITE_ID,
-  spaMode: "history",
-  debug: false,
+const CONFIG = {
+  clientKey: "0643615695f0a88d99a848b4d39d99e8",
 }
 
 export const onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents([
     <script
-      key="panelbear-analytics-src"
+      key="cronitor-rum-src"
       async
-      src={`https://cdn.panelbear.com/analytics.js?site=${PANELBEAR_SITE_ID}`}
+      src="https://rum.cronitor.io/script.js"
     />,
     <script
-      key="panelbear-analytics-code"
+      key="cronitor-rum-code"
       dangerouslySetInnerHTML={{
         __html: `
-          window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
-          panelbear('config', ${JSON.stringify(PANELBEAR_CONFIG)});
+          window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+          cronitor('config', ${JSON.stringify(CONFIG)});
         `,
       }}
     />,
